@@ -2,12 +2,18 @@ from math import *
 
 
 # basic arithmetic operations
-def add(num1, num2):
-    return num1 + num2
+def add(*numbers):
+    result = 0
+    for number in numbers:
+        result += number
+    return result
 
 
-def multiply(num1, num2):
-    return num1 * num2
+def multiply(*numbers):
+    result = 1
+    for number in numbers:
+        result *= number
+    return result
 
 
 def divide(num1, num2):
